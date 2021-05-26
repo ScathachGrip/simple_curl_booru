@@ -1,0 +1,13 @@
+language: ruby
+
+branches:
+only:
+  - main
+
+rvm:
+  - 2.6
+
+jobs:
+  include:
+    - stage: test
+      script: ruby src/spell.rb
